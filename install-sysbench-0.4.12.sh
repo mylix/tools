@@ -7,7 +7,7 @@ tar xfvz Sysbench-0.4.12.tar.gz
 cd Sysbench-0.4.12
 libtoolize --force --copy
 ./autogen.sh
-./configure --without-mysql
+./configure --with-pgsql --without-mysql
 make
 sudo make install
 
